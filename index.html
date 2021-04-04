@@ -27,14 +27,23 @@
             <ul class="list auth-nav">
                 <li class="item">
                     <a class="link nav-link" href="mailto:info@devstudio.com">
-                        <svg class="icon" width="16" height="12">
-                            <use href="./images/icons.svg#icon-mail"></use>
-                        </svg>
-                        info@devstudio.com</a>
+                        <div class="auth-nav-item">
+                            <svg class="auth-nav-icon" width="16" height="12">
+                                <use href="./images/icons.svg#icon-mail"></use>
+                            </svg>
+                            info@devstudio.com
+                        </div>
+                    </a>
                 </li>
                 <li class="item">
                     <a class="link nav-link" href="tel:+380961111111">
-                        +38 096 111 11 11</a>
+                        <div class="auth-nav-item">
+                            <svg class="auth-nav-icon" width="10" height="16">
+                                <use href="./images/icons.svg#icon-tel"></use>
+                            </svg>          
+                            +38 096 111 11 11
+                        </div>
+                    </a>
                 </li>
             </ul>
         </nav>
@@ -273,87 +282,108 @@
                 <h2 class="section-title">Постоянные клиенты</h2>
                 <ul class="list grid">
                     <li class="grid-item company-item">
-                        <a class="link" href="">
-                        <div class="company-box">
+                        <a class="company-link link" href="" target="_blank" rel="noopener noreferrer">
                             <svg class="company-logo" width="44" height="49">
                                 <use href="./images/icons.svg#icon-firstcompany"></use>
                             </svg>
-                        </div>
                         </a>
                     </li>
                     <li class="grid-item company-item">
-                        <a class="link" href="">
-                            <div class="company-box">
+                        <a  class="company-link link" href="" target="_blank" rel="noopener noreferrer">
                                 <svg class="company-logo" width="40" height="52">
                                     <use href="./images/icons.svg#icon-secondcompany"></use>
                                 </svg>
-                            </div>
                         </a>
                     </li>
                     <li class="grid-item company-item">
-                        <a href="">
-                            <div class="company-box">
+                        <a  class="company-link link" href="" target="_blank" rel="noopener noreferrer">
                                 <svg class="company-logo" width="41" height="43">
                                     <use href="./images/icons.svg#icon-thirdcompany"></use>
                                 </svg>
-                            </div>
                         </a>
                     </li>
                     <li class="grid-item company-item">
-                        <a href="">
-                            <div class="company-box">
+                        <a  class="company-link link" href="" target="_blank" rel="noopener noreferrer">
                                 <svg class="company-logo" width="80" height="42">
                                     <use href="./images/icons.svg#icon-fourthcompany"></use>
                                 </svg>
-                            </div>
                         </a>
                     </li>
                     <li class="grid-item company-item">
-                        <a href="">
-                            <div class="company-box">
+                        <a  class="company-link link" href="" target="_blank" rel="noopener noreferrer">
                                 <svg class="company-logo" width="59" height="47">
                                     <use href="./images/icons.svg#icon-fifthcompany"></use>
                                 </svg>
-                            </div>
                         </a>
                     </li>
                     <li class="grid-item company-item">
-                        <a href="">
-                            <div class="company-box">
+                        <a  class="company-link link" href="" target="_blank" rel="noopener noreferrer">
                                 <svg class="company-logo" width="89" height="45">
                                     <use href="./images/icons.svg#icon-sixthcompany"></use>
                                 </svg>
-                            </div>
                         </a>
                     </li>
-                    
                 </ul>
             </div>
-
         </section>
-
-
     </main>
 
     <footer class="dark-bg footer">
-        <div class="container">
-            <a class="webstudio" href="./" lang="en">
-            <span class="web">Web</span><span class="studio">Studio</span>
-            </a>
-            <address class="address">
-                <ul class="list">
-                    <li>
-                        <a class="link map-link" href="https://goo.gl/maps/1BC2KQwBZv3AQeFU6" target="_blank" rel="noopener noreferrer">
-                            г. Киев, пр-т Леси Украинки, 26</a>
+        <div class="container footer-box">
+            <div>
+                <a class="webstudio" href="./" lang="en">
+                <span class="web">Web</span><span class="studio">Studio</span>
+                </a>
+                <address class="address">
+                    <ul class="list">
+                        <li>
+                            <a class="link map-link" href="https://goo.gl/maps/1BC2KQwBZv3AQeFU6" target="_blank" rel="noopener noreferrer">
+                                г. Киев, пр-т Леси Украинки, 26</a>
+                        </li>
+                        <li class="contact-item">
+                            <a class="link contact-link" href="mailto:info@example.com">info@example.com</a>
+                        </li>
+                        <li class="contact-item">
+                            <a class="link contact-link" href="tel:+380991111111">+38 099 111 11 11</a>
+                        </li>
+                    </ul>
+                </address>
+            </div>
+
+            <div class="join-box">
+                <h3 class="advantage-title join-title">Присоединяйтесь</h3>
+                <ul class="list social-icons">
+                    <li class="social-icons-item">
+                        <a href="" class="social-icons-link" target="_blank" rel="noopener noreferrer">
+                            <svg class="icon">
+                                <use href="./images/icons.svg#icon-instagram "></use>
+                            </svg>
+                        </a>
                     </li>
-                    <li class="contact-item">
-                        <a class="link contact-link" href="mailto:info@example.com">info@example.com</a>
+                    <li class="social-icons-item">
+                        <a href="" class="social-icons-link" target="_blank" rel="noopener noreferrer">
+                            <svg class="icon">
+                                <use href="./images/icons.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
                     </li>
-                    <li class="contact-item">
-                        <a class="link contact-link" href="tel:+380991111111">+38 099 111 11 11</a>
+                    <li class="social-icons-item">
+                        <a href="" class="social-icons-link" target="_blank" rel="noopener noreferrer">
+                            <svg class="icon">
+                                <use href="./images/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-icons-item">
+                        <a href="" class="social-icons-link" target="_blank" rel="noopener noreferrer">
+                            <svg class="icon">
+                                <use href="./images/icons.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
                     </li>
                 </ul>
-            </address>
+
+            </div>
         </div>
     </footer>
 </body>

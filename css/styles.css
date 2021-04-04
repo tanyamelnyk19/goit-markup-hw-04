@@ -174,8 +174,27 @@ nav .nav-link {
   margin-left: auto;
 }
 
+.auth-nav-item {
+  display: inline-flex;
+  align-items: center;
+}
+
+.auth-nav .nav-link {
+  color: var(--main-text-color);
+}
+
+.auth-nav .nav-link:hover,
+.auth-nav .nav-link:focus {
+  color: var(--accent-color);
+}
+
 .auth-nav .item:not(:last-child) {
   margin-right: 50px;
+}
+
+.auth-nav-icon {
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 .hero {
@@ -189,6 +208,8 @@ nav .nav-link {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  border: 1px solid var(--light-bg-text-color);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .hero-content {
@@ -226,7 +247,9 @@ nav .nav-link {
 }
 
 .icon-box {
-  padding: 25px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 30px;
   width: 270px;
   height: 120px;
@@ -301,6 +324,15 @@ nav .nav-link {
   fill: var(--company-logo-color);
 }
 
+.join-box .social-icons-link {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.join-box .icon {
+  fill: var(--dark-bg-text-color);
+}
+
 .social-icons-link:hover,
 .social-icons-link:focus {
   background-color: var(--accent-color);
@@ -341,12 +373,39 @@ nav .nav-link {
   --grid-item: 6;
 }
 
-.company-box {
+.company-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 170px;
   height: 90px;
   border: 1px solid var(--company-logo-color);
   border-radius: 4px;
-  color: var(--company-logo-color);
+  fill: var(--company-logo-color);
+}
+
+.company-link:hover,
+.company-link:focus {
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.footer-box {
+  display: flex;
+}
+
+.join-box {
+  margin-left: 70px;
+  margin-top: 12px;
+}
+
+.join-title {
+  margin-bottom: 20px;
+  color: var(--dark-bg-text-color);
+}
+
+.join-box .social-icons {
+  margin-top: 0;
 }
 
 /*Стили для страницы Портфолио*/
@@ -379,6 +438,7 @@ nav .nav-link {
 .button-filter:focus {
   background-color: var(--accent-color);
   color: var(--dark-bg-text-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /*стили карточек*/
@@ -422,4 +482,12 @@ nav .nav-link {
   font-size: 16px;
   line-height: 1.875;
   color: var(--main-text-color);
+}
+.card-link {
+  display: block;
+}
+
+.card-link:hover,
+.card-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
