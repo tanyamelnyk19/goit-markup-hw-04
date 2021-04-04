@@ -12,6 +12,7 @@
   --logo-font: 'Raleway', sans-serif;
   --border-color: #ececec;
   --card-border-color: #eeeeee;
+  --company-logo-color: #afb1b8;
   --grid-item: 1;
 }
 
@@ -180,6 +181,14 @@ nav .nav-link {
 .hero {
   text-align: center;
   padding: 200px 0;
+  max-width: 1600px;
+  min-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-content {
@@ -216,6 +225,15 @@ nav .nav-link {
   padding-bottom: 94px;
 }
 
+.icon-box {
+  padding: 25px 100px;
+  margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
+  background-color: var(--button-filter-bg-color);
+  border-radius: 4px;
+}
+
 .advantage-item {
   --grid-item: 4;
 }
@@ -248,6 +266,8 @@ nav .nav-link {
   text-align: center;
   --grid-item: 4;
   background-color: var(--dark-bg-text-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-member .name {
@@ -256,6 +276,40 @@ nav .nav-link {
   font-weight: 500;
   font-size: 16px;
   color: var(--title-color);
+}
+
+.social-icons {
+  display: inline-flex;
+  margin-top: 16px;
+}
+
+.social-icons-item + .social-icons-item {
+  margin-left: 10px;
+}
+
+.social-icons-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+}
+
+.social-icons .icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--company-logo-color);
+}
+
+.social-icons-link:hover,
+.social-icons-link:focus {
+  background-color: var(--accent-color);
+  border-radius: 50%;
+}
+
+.social-icons-link:hover .icon,
+.social-icons-link:focus .icon {
+  fill: var(--dark-bg-text-color);
 }
 
 .footer {
@@ -281,6 +335,18 @@ nav .nav-link {
 
 .contact-link {
   color: rgba(255, 255, 255, 0.6);
+}
+
+.company-item {
+  --grid-item: 6;
+}
+
+.company-box {
+  width: 170px;
+  height: 90px;
+  border: 1px solid var(--company-logo-color);
+  border-radius: 4px;
+  color: var(--company-logo-color);
 }
 
 /*Стили для страницы Портфолио*/
